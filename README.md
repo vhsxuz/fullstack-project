@@ -1,3 +1,12 @@
 # fullstack-project
-Fullstack Development project using NodeJS, Express, ReactJS, and MySQL
+Simple fullstack website project using:
+- NodeJS
+- ExpressJS
+- ReactJS
+- MySQL
+<br>
 created by: Andreas alexander
+
+<br>
+## Setup Guide
+
