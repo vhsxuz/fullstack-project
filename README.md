@@ -8,5 +8,5 @@ Simple fullstack website project using:
 created by: Andreas alexander
 
 <br>
-## Setup Guide
+# Setup Guide
 
