@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import ProductList from "./components/productList";
 import AddProduct from "./components/addProduct";
+import EditProduct from './components/editProduct';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
             <Routes>
                 <Route exact path="/" element={<ProductList />} />
                 <Route path="/add-product" element={<AddProduct />} />
+                <Route path="/edit-product/:id" element={<EditProduct />} />
             </Routes>
           </div>
         </div>

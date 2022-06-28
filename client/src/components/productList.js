@@ -19,6 +19,11 @@ const ProductList = () => {
         setProduct(response.data);
     }
 
+    const deleteProduct = async (id) => {
+        await axios.delete(`http://localhost:8000/products/${id}`);
+        getProducts();
+    }
+
     return (
         <div>
             <Link to="/add-product"className="button is-primary mt-5 mb-5"> Add Product </Link>
@@ -38,8 +43,8 @@ const ProductList = () => {
                             <td>{ product.title }</td>
                             <td>{ product.price }</td>
                             <td>
-                                <button className="button is-small is-info mr-2">Edit</button>
-                                <button className="button is-small is-danger">Delete</button>
+                                <Link to={`/edit-product/${product.id}`} className="button is-small is-info mr-2">Edit</Link>
+                                <button onClick={() => deleteProduct(product.id)} className="button is-small is-danger">Delete</button>
                             </td>
                         </tr>
                     ))}
